@@ -79,6 +79,27 @@ $(function (){
         })
     });
 
+ var modal = document.getElementById("worksModal");
+ var img = document.querySelectorAll(".worksImg");
+ var modalImg = document.getElementById("modal");
+ var legenda = document.getElementById("caption");  
+ var srcImg ="";  
+
+ for (let i =0; i<img.length; i ++){
+    img[i].addEventListener('click' ,function(){
+        modal.style.display = "block";
+        srcImg = img[i].getAttribute('src');
+        modalImg.setAttribute('src', srcImg);
+        legenda.innerHTML = this.alt;
+    })
+ }
+
+ var span = document.getElementsByClassName("close")[0];
+
+ span.onclick = function(){
+    modal.style.display = "none";
+}
+
 valorCont.forEach((valor) => {
     let valorInicial = 0;
     let valorFinal = parseInt(valor.getAttribute("data-counter"));
@@ -91,3 +112,15 @@ valorCont.forEach((valor) => {
         }
     }, duracao);
 });
+
+function redirecionarReplace(){
+    window.location.href = "http://www.google.com";
+}
+
+function redirecionarLoad(){
+    document.getElementById("loading").style.display = "block";
+
+    setTimeout(function(){
+        window.location.href = "https://www.google.com";
+    }, 5000);
+}
