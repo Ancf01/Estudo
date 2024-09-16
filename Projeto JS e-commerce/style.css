@@ -1,0 +1,63 @@
+*{
+    margin: 5px 10px 5px 10px;
+    font-family:sans-serif;
+}
+body{
+    background-color:#f2f0eb ;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+
+}
+nav{
+    align-items:center;
+    justify-content: flex-start;
+    display: flex;
+ 
+
+}
+.menu ul, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    font-size: 12px;
+
+    
+}
+
+
+
+.logo{
+    border-radius: 0px 8px 0px 8px;
+    max-width: 70px;
+}
+
+.carrinho{
+    max-width: 24px;
+}
+input{
+    border-width: 1px;
+    border-style:solid;
+    border-color: #000000;
+    border-radius: 20px;
+    width: 250px;
+    padding: 2px 10px 2px 10px ;
+    
+}
+
+input:hover{
+    border-color: #000000;
+}
+
+
+
+.grade{
+
+    display:grid;
+    grid-template-columns:   ;
+    
+}
