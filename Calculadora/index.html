@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="001.css">
+   
+
+</head>
+<body>
+    <h1>Calculadora</h1>
+    
+    <div class="conteudo">
+        <div class="calculadora">
+            <p class="result" id="resultado"></p>
+            
+            <table>
+                <tr>
+                    <td>
+                        <button class="btn ac" style="width:106px;" onclick="limpar()">AC</button>
+                    </td>
+                    <td>
+                        <button class="btn neg" onclick="apagar()">C</button>
+                    </td>
+                    <td>
+                        <button class="btn s" onclick="inserir('/')">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" onclick="inserir('7')">7</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('8')">8</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('9')">9</button>
+                    </td>
+                    <td>
+                        <button class="btn s" onclick="inserir('*')">X</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" onclick="inserir('4')">4</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('5')">5</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('6')">6</button>
+                    </td>
+                    <td>
+                        <button class="btn s" onclick="inserir('-')">-</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" onclick="inserir('1')">1</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('2')">2</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('3')">3</button>
+                    </td>
+                    <td>
+                        <button class="btn s" onclick="inserir('+')">+</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" onclick="inserir('0')">0</button>
+                    </td>
+                    <td>
+                        <button class="btn" onclick="inserir('.')">,</button>
+                    </td>
+                    <td>
+                        <button class="btn igual" style="width:106px;" onclick="confirmar()">=</button>
+                    </td>
+                    
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
