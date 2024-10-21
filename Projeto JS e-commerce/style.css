@@ -1,6 +1,5 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    font-size: 13px;
     font-family:sans-serif;
 }
 body{
@@ -9,31 +8,37 @@ body{
 }
 
 header{
-    width: 90vw;
-    padding: auto;
-    margin:auto;
+    width: 95vw;
+    padding: 5px;
+    margin: 5px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
 
 }
 nav{
-    
+    padding: 5px;
+    margin: 5px;
     align-items:center;
     justify-content: flex-start;
     display: flex;
     width: 100%;
+}
+
+
     
 
-}
+
 .menu ul, a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
     list-style: none;
-    font-size: 26px;
+    font-size: 16px;
     color: #000000;
+    padding: 2px;
+    margin: 5px;
 
     
 }
@@ -87,8 +92,42 @@ input:hover{
       height: 98%;
 }
 
+.conteudo{
+    display: grid;
+    padding: 5px;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+
+
+
+.ctn-1{grid-area:1 / 1 / 2 / 2;}
+.ctn-2{grid-area:1 / 2 / 2 / 3;}
+.ctn-3{grid-area:1 / 3 / 2 / 4;}
+.ctn-4{grid-area:2 / 1 / 3 / 2;}
+.ctn-5{grid-area:2 / 2 / 3 / 3;}
+.ctn-6{grid-area:2 / 3 / 3 / 4;}
+.ctn-7{grid-area:3 / 1 / 4 / 2;}
+.ctn-8{grid-area:3 / 2 / 4 / 3;}
+.ctn-9{grid-area:3 / 3 / 4 / 4;} 
+
+.button-box{
+    width: 25%;
+}
+.box-button{
+    display: flex;
+    justify-content: space-around;
+}
 /*=========fim area do gride===============*/
 
+
+
+
+
+
+/*lembrar de APAGAR*/
 .apagar{
     display: flex;
     justify-content: center;
@@ -105,7 +144,7 @@ button{
 
 
 /*=========começar footer===============*/
-h1{
+footer h1{
     
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
