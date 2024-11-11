@@ -24,10 +24,18 @@ nav{
     display: flex;
     width: 100%;
 }
+article{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+}
 
-
-    
-
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+}
 
 .menu ul, a {
     display: flex;
@@ -42,6 +50,7 @@ nav{
 
     
 }
+
 .menu ul, a:hover{
     color: #787878;
 }
@@ -93,14 +102,20 @@ input:hover{
 }
 
 .conteudo{
+  
+    padding: 8px;
+    margin: 8px;
     display: grid;
-    padding: 5px;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px ;
     grid-template-columns:  repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
 
 
-
+.conteudo img{
+    width: 100%;
+}
 
 
 .ctn-1{grid-area:1 / 1 / 2 / 2;}
@@ -113,13 +128,22 @@ input:hover{
 .ctn-8{grid-area:3 / 2 / 4 / 3;}
 .ctn-9{grid-area:3 / 3 / 4 / 4;} 
 
-.button-box{
+.button-box img{
     width: 25%;
+    
 }
+.button-box{
+    width: 50%;
+}
+
 .box-button{
+   
     display: flex;
     justify-content: space-around;
 }
+
+
+
 /*=========fim area do gride===============*/
 
 
@@ -139,6 +163,13 @@ button{
     color: #ffffff;
     border-width: 1px;
     box-shadow: -1px 1px 4px #3a64ee;
+
+}
+button:hover{
+    background-color: #466ff7;
+    color: #ffffff;
+    border-width: 1px;
+    box-shadow: -1px 1px 10px #577bf1;
 
 }
 
