@@ -259,6 +259,7 @@ span{
 
 /*side bar*/
 
+
 .barra-lateral button{
     
     
@@ -270,5 +271,12 @@ span{
 
 .barra-lateral button:hover{
   box-shadow: -1px 1px 4px #ffffff;
+}
+
+.carrosel{
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
